@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  background-color: #fffff8;
+  margin: 0 auto;
+}
+header {
+  background: #000003;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 17px;
+  padding: 1rem;
+}
+main {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+article {
+  border: 1px solid grey;
+  padding: 2rem;
+  flex: 1 1 auto;
+  margin-right: 10px;
+}
+.sidebar {
+  flex: 1 1 300px;
+  color: cornsilk;
+}
+
+.text-right {
+  text-align: right;
+}
+.bgSec {
+  background-color: rgb(2, 2, 22);
+}
+.bgPrim {
+  background-color: blue;
+}

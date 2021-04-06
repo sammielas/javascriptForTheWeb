@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="changecolors.css">
+  <title>DOM Manipulation</title>
+</head>
+<body>
+  <div class="container">
+    <header class="row ">
+      <h1 id="page-title" class="text-center w-100 ">Change my colours!</h1>
+    </header>
+  <div class="row d-flex mt-2">
+    <nav class="btn-group">
+      <button id="color-button-blue" class="btn btn-secondary">Blue</button>
+      <button id="color-button-brown" class="btn btn-secondary">Brown</button>
+      <button id="color-button-green" class="btn btn-secondary">Green</button>
+      <button id="color-button-none" class="btn btn-secondary">None</button>
+    </nav>
+  </div> 
+  <main class="mt-4">
+    <section class="col list-group">
+      <article class="list-group-item">
+        <h5>A blog Post</h5>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae sit recusandae non culpa mollitia ducimus aliquam maiores maxime reiciendis atque odit, omnis officiis porro, impedit fuga? Eaque cupiditate esse repudiandae.</p>
+      </article>
+    </section>
+    <div class="row">
+      <div class="col text-right">
+        <button class="btn btn-secondary" id="add-post">Add Post</button>
+        <button class="btn btn-secondary" id="remove-post">Remove Last Post</button>
+      </div>
+    </div>
+  </main>
+  </div>
+ 
+  <script src="changeColors.js"></script>
+</body>
+</html>
