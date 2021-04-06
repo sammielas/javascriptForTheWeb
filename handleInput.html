@@ -23,11 +23,79 @@
           <label  for="last-name">Last name</label>
           <input type="text" id="last-name" class="form-control">
         </div>
-        <button type="button" id="submit-button" class="btn btn-success text-white ">Submit</button>
+        <button type="submit" id="submit-button" class="btn btn-success text-white ">Submit</button>
       </form>
     </main>
     <aside id="sidebar" class="col bg-info text-white"></aside>
   </div>
+
+
+  <div class="row">
+    <main class="col">
+      <form action="" id="comment-form">
+        <div class="form-group">
+         <h1>Hobbies</h1>
+         <div class="form-check">
+           <input type="checkbox" id="sports-checkbox" class="form-check-input">
+           <label for="sports-checkbox" class="form-check-label">Sports</label>
+         </div>
+         <div class="form-check">
+          <input type="checkbox" id="video-checkbox" class="form-check-input">
+          <label for="video-checkbox" class="form-check-label">Video</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" id="music-checkbox" class="form-check-input">
+          <label for="music-checkbox" class="form-check-label">Music</label>
+        </div>
+        </div>
+        <div class="form-group">
+          <h2>Favourite Mode Of transport</h2>
+          <div class="form-check">
+            <input type="radio" id="car-radio" value = 'Car' class="form-check-input" name="transport-method" >
+            <label for="car-radio" class="form-check-label">Car</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="bike-radio" value = 'Bike' class="form-check-input"  name="transport-method">
+            <label for="bike-radio" class="form-check-label">Bike</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" id="other-radio" value = 'Other' class="form-check-input"  name="transport-method">
+            <label for="other-radio" class="form-check-label">Other</label>
+          </div>
+        </div>
+        <div class="form-group">
+       
+          <label for="music-preference">Favourite Kind of Music</label> <br><br>
+          <select name="" id="music-preference" class="form-control">
+              <option value="Rock">Rock</option>
+              <option value="Jazz">Jazz</option>
+              <option value="Classical">Classical</option>
+              <option value="Other">Other</option>
+
+          </select>
+        </div>
+        
+      </form>
+    </main>
+    <aside id="sidebar" class="col bg-info text-white">
+      <p>
+        You enjoy:
+        <ul id="hobbies-result">
+          <li class="text-sec">Sports</li>
+          <li class="text-sec">Video</li>
+          <li class="text-sec">Music</li>
+        </ul>
+      </p>
+      <br>
+      <p>Your favourite mode of transport is</p>
+      <div id="transport-result"></div>
+      <br>
+      <p>Your favourite Kind of music is</p>
+      <div id="music-result"></div>
+
+    </aside>
+  </div>
+
   </div>
   <script src="handleInput.js"></script>
 </body>
